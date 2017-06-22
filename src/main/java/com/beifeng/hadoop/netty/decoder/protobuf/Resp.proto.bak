@@ -1,0 +1,13 @@
+package netty;
+option java_package="com.beifeng.hadoop.netty.decoder.protobuf";
+option java_outer_classname="ReqProto";
+
+message Req{
+	required int32 id = 1;
+	
+	optional string userName = 2;
+	
+	required string productName = 3;
+
+	repeated string address = 4;
+}

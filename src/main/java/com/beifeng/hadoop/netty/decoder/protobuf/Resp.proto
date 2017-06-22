@@ -1,0 +1,11 @@
+package netty;
+option java_package="com.beifeng.hadoop.netty.decoder.protobuf";
+option java_outer_classname="RespProto";
+
+message Resp{
+	required int32 id = 1;
+	
+	required string code = 2;
+
+	optional string desc = 3;
+}

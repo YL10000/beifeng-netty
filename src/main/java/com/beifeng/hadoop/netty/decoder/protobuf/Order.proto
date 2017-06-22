@@ -1,0 +1,11 @@
+package netty;
+option java_package="com.beifeng.hadoop.netty.decoder.protobuf";
+option java_outer_classname="OrderProto";
+
+message Order{
+	required int32 orderId = 1;
+	
+	required string productName = 2;
+	
+	required double money = 3;
+}
